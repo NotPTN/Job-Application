@@ -1,0 +1,274 @@
+<html>
+	<title>
+		<head>
+			CSS Test
+		</head>
+	</title>
+	<style type="text/css">
+		body {
+			background-image: url("office.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-blend-mode: 	lighten;
+			background-color: hsla(220, 23%, 64%, 0.1);
+		}
+
+		img {
+			opacity: 0.2;
+		}
+
+		div.head {
+			font-family: georgia;
+			text-align: center;
+			font-size: 60px;
+			width: 1000px;
+			color: black;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: bold;
+		}
+
+		div.form {
+			background-color: hsla(220, 21%, 24%, 0.5);
+			font-family: georgia;
+			font-size: 20px;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+		}
+
+		input.Name[type=text] {
+  			width: 90%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			background-color: hsla(220, 21%, 19%, 0.5);
+  			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+
+		}
+
+		input.mail[type=email] {
+			width: 90%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			background-color: hsla(220, 21%, 19%, 0.5);
+  			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+		}
+
+		input.ph[type=tel] {
+			width: 90%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			background-color: hsla(220, 21%, 19%, 0.5);
+  			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+		}
+
+		select.sel {
+			width: 50%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			background-color: hsla(220, 21%, 19%, 0.5);
+  			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+		}
+
+		textarea.reason {
+			width: 75%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			background-color: hsla(220, 21%, 19%, 0.5);
+  			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+		}
+
+		input.at[type=file] {
+  			display: none;
+		}
+
+		.att {
+			display: inline-block;
+			background-color: #4CAF50;
+			border: 0;
+			padding: 15px 30px;
+			border-radius: 8px;
+			text-align: center;
+			cursor: pointer;
+			height: 30px;
+		}
+
+		input.su[type=submit] {
+			display: inline-block;
+			background-color: #4CAF50;
+			border: 0;
+			padding: 15px 30px;
+			border-radius: 8px;
+			text-align: center;
+			cursor: pointer;
+			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+  			margin-left: 75px;
+		}
+
+		.sub{
+			display: inline-block;
+			background-color: #4CAF50;
+			border: 0;
+			padding: 15px 30px;
+			border-radius: 8px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		input.res[type=reset] {
+			display: inline-block;
+			background-color: #4CAF50;
+			border: 0;
+			padding: 15px 30px;
+			border-radius: 8px;
+			text-align: center;
+			cursor: pointer;
+			font-family: georgia;
+  			color: white;
+  			font-size: 20px;
+  			margin-left: 100px;
+		}
+
+ 	</style>
+	<body>
+		<br>
+		<div id="header" class="head">
+			<p class="ja">Job Application Form</p>
+		</div>
+		<div id="content" class="form">
+			<form action="END.html" method="POST">
+				<br>
+				<br>
+				<label for="name" style="margin-left: 50px;">
+					Full Name:
+				</label>
+				<br>
+				<br>
+				<input type="text" id="name" name="name" class="Name" style="margin-left: 50px;" placeholder="Input text" required>
+				<br>
+				<br>
+				<br>
+				<label for="Email" style="margin-left: 50px;">
+					Email Address:
+				</label>
+				<br>
+				<br>
+				<input type="email" id="Email" name="Email" class="mail" style="margin-left: 50px;" placeholder="Input text" required>
+				<br>
+				<br>
+				<br>
+				<label for="ph" style="margin-left: 50px;">
+					Phone Number(Format: 09-xxxxxxxxx):
+				</label>
+				<br>
+				<br>
+				<input type="tel" id="ph" name="ph" class=ph style="margin-left: 50px;" placeholder="Input text" pattern="[0,9]{2}-[0-9]{9}" required>
+				<br>
+				<br>
+				<br>
+				<label for="pos" style="margin-left: 50px;">
+					Please choose the position you're applying for:
+				</label>
+				<br>
+				<br>
+				<select id="pos" class="sel" style="margin-left: 50px;">
+					<option>Accounting Clerk
+					<option>Customer Service Representative</option>
+					<option>Executive Assistant </option>
+					<option>Sales Representative</option>
+					<option>Scheduler</option>
+					<option>Database Administrator
+					<option>Software Engineer</option>
+					<option>Marketing Supervisor</option>
+					<option>Service Engineer</option>
+					<option>Office Manager</option>
+					<option>Human Resource Manager</option>
+				</select>
+				<br>
+				<br>
+				<br>
+				<label for="reason" style="margin-left: 50px;">
+					What are your reasons for applying for this job?
+				</label>
+				<br>
+				<br>
+				<textarea id="reason" placeholder="Input text" cols="75" class="reason" rows="10" style="margin-left: 50px; font-size: 20px;" required></textarea>
+				<br>
+				<br>
+				<br>
+				<label style="margin-left: 50px;">
+					What is the best method of contacting you?
+				</label>
+				<br>
+				<br>
+				<input type="radio" name="cb1" class="cb1" id="cb1" style="margin-left: 50px; zoom: 1.5">
+				<label>
+					Telephone
+				</label>
+				<input type="radio" name="cb1" class="cb2" id="cb2" style="margin-left: 100px; zoom: 1.5">
+				<label>
+					Fax
+				</label>
+				<br>
+				<br>
+				<br>
+				<input type="radio" name="cb1" class="cb3" id="cb3" style="margin-left: 50px; zoom: 1.5">
+				<label>
+					Email
+				</label>
+				<br>
+				<br>
+				<br>
+				<label style="margin-left: 50px;">
+					Please attach a file for your resume:
+				</label>
+				<br>
+				<br>
+				<label for="att" class="att" style="margin-left: 70px;">
+					Upload File
+				</label>
+				<input type="file" name="att" class="at" id="att" style="margin-left: 50px;" required>
+				<br>
+				<br>
+				<br>
+				<label style="margin-left: 50px;" for="cb4">
+							<b>**Please ensure the box below is checked if your status meets the credentials.**</b>
+						</label>
+						<br>
+						<br>
+						<input type="checkbox" name="cb4" id="cb4" style="margin-left: 50px; font-size: 20px; zoom: 1.5" required>
+						<label>
+							I am over the age of 18 and legally permitted to work.
+						</label>
+						<br>
+						<br>
+						<br>
+						<input type="submit" name="sub" id="sub" class="su">
+						<input type="reset" name="res" id="res" class="res">
+						
+			</form>
+			<br>
+			<br>
+		</div>
+	</body>
+
+</html>
