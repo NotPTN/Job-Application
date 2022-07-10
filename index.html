@@ -1,0 +1,405 @@
+<html>
+	
+	<head>
+		<title>
+			Apply for a job
+		</title>
+	</head>
+	<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+			body {
+				background-image: url("ofc.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-blend-mode: 	lighten;
+				background-color: hsla(220, 23%, 60%, 0.6);
+			}
+
+			img.logo {
+				background-blend-mode: lighten;
+				width: 400px;
+				height: 100px;
+			}
+
+			* {
+				box-sizing: border-box;
+				padding: 0px;
+				margin: 0px;
+				background-color: #87ceeb;
+				scroll-behavior: smooth;
+			}
+
+			li, a, button {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				font-size: 20px;
+				text-decoration: none;
+			}
+
+			header {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding: 30px 10%;
+			}
+
+			.logo {
+				cursor: pointer;
+				margin-right: auto;
+			}
+
+			.nav__links {
+				list-style: none;
+			}
+
+			.nav__links li {
+				display: inline-block;
+				padding: 0px 20px;
+			}
+
+			.nav__links	li a {
+				transition: all	0.3s ease 0s;
+			}
+
+			.nav__links	li a:hover {
+				color: #0088a9;
+			}
+
+			button.apply {
+				padding: 9px 25px;
+				background-color: rgba(0, 136, 169, 1.0);
+				border: none;
+				border-radius: 50px;
+				cursor: pointer;
+				color: white;
+				transition: all	0.3s ease 0s;
+				margin-left: 20px;
+			}
+
+			button:hover {
+				background-color: rgba(0, 136, 169, 0.8);
+			}
+
+			div.title {
+				background-color: hsla(220, 21%, 24%, 0.5);
+				font-family: 'Oswald', sans-serif;
+				font-size: 50px;
+				text-decoration: none;
+				font-weight: 500;
+				box-sizing: none;
+				margin-left: 200px;
+				color: white;
+				width: 60%;
+			}
+
+			.head {
+				margin-left: 50px;
+				background-color: hsla(220, 21%, 24%, 0.0);
+				color: white;
+			}
+
+			.paragraph1 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				margin-left: 50px;
+				text-align: justify;
+				margin-right: 50px;
+				color: white;
+			}
+
+			.paragraph2 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				margin-left: 50px;
+				text-align: justify;
+				margin-right: 50px;
+				color: white;
+			}
+
+			.paragraph3 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				margin-left: 50px;
+				text-align: justify;
+				margin-right: 50px;
+				color: white;
+			}
+
+			button.learn {
+				padding: 9px 25px;
+				background-color: rgba(0, 136, 169, 1.0);
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				color: white;
+				transition: all	0.3s ease 0s;
+				margin-left: 20px;
+				font-size: 30px;
+			}
+
+			.lm {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				font-size: 100px;
+				margin-left: 20px;
+			}
+
+			.head3 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				margin-left: 50px;
+				font-weight: normal;
+			}
+
+			.head4 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				margin-left: 50px;
+				font-weight: normal;
+			}
+
+			.p1 {
+				margin-left: 120px;
+				border-radius: 75px;
+				width: 150px;
+				height: 150px;
+			}
+
+			.p2 {
+				margin-left: 220px;
+				border-radius: 75px;
+				width: 150px;
+				height: 150px;
+			}
+
+			.p3 {
+				margin-left: 240px;
+				border-radius: 75px;
+				width: 150px;
+				height: 150px;
+				margin-right: 80px;
+			}
+
+			.names {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				font-size: 40px;
+			}
+
+			.n1 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				margin-left: 70px;
+				font-size: 40px;
+			}
+
+			.n2 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				margin-right: 0px;
+				font-size: 40px;
+			}
+
+			.n3 {
+				background-color: hsla(220, 21%, 24%, 0.0);
+				margin-right: 30px;
+				font-size: 40px;
+			}
+
+			.s1 {
+				font-family: 'Oswald', sans-serif; 
+				font-size: 50px; 
+				color: white; 
+				font-weight: normal;
+				margin-left: 200px;
+			}
+
+			.s2 {
+				font-family: 'Oswald', sans-serif; 
+				font-size: 50px; 
+				color: white; 
+				font-weight: normal;
+				margin-right: 50px;
+			}
+
+			.s3 {
+				font-family: 'Oswald', sans-serif; 
+				font-size: 50px; 
+				color: white; 
+				font-weight: normal;
+				margin-right: 225px;
+			}
+
+			.pr1 {
+				font-family: 'Montserrat', sans-serif; 
+				font-size: 20px; 
+				color: white; 
+				font-weight: normal;
+				margin-left: 175px;
+				width: 20%;
+				text-align: center;
+			}
+
+			.pr2 {
+				font-family: 'Montserrat', sans-serif; 
+				font-size: 20px; 
+				color: white; 
+				font-weight: normal;
+				margin-right: 0px;
+				width: 20%;
+				text-align: center;
+			}
+
+			.pr3 {
+				font-family: 'Montserrat', sans-serif; 
+				font-size: 20px; 
+				color: white; 
+				font-weight: normal;
+				margin-right: 175px;
+				width: 20%;
+				text-align: center;
+			}
+
+			.diss {
+				font-family: 'Montserrat', sans-serif; 
+				font-size: 15px; 
+				color: grey; 
+				font-weight: normal;
+				width: 80%;
+				margin: auto;
+				text-align: center;
+				transition: all	0.3s ease 0s;
+				cursor: pointer;
+			}
+
+			.diss1 {
+				font-family: 'Montserrat', sans-serif; 
+				font-size: 15px; 
+				color: grey; 
+				font-weight: normal;
+				width: 80%;
+				margin: auto;
+				text-align: center;
+			}
+
+			.diss:hover {
+				color: purple;
+				text-underline-position: auto;
+				text-decoration: underline;
+			}
+
+			button.learn:hover {
+				background-color: rgba(0, 136, 169, 0.8);
+			}
+
+		</style>
+
+	<body>
+		<header>
+			<img class="logo" src="logo3.jpg" alt="logo" id="c">
+			<nav id="navbar">
+				<ul class="nav__links">
+					<li>
+						<a href="#home">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#ab">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#sv">
+							Services
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="Job Application.html" class="app"><button class="apply">Apply Now</button></a>
+		</header>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="sidebar" class="title">
+			<br>
+			<p class="head" id="home">APPLY FOR A JOB</p>
+			<br>
+			<p class="paragraph3">Welcome! Find the job the suits you best, while retaining professionalism and high standard. Our site is totally trusted, and always welcome to candidates who are willing to look for their ideal job. You are a click away from landing your dream job. Apply today...</p>
+			<br>
+			<a href="Job Application.html" class="lm"><button class="learn">Learn More...</button></a>
+			<br>
+			<br>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="sidebar" class="title">
+			<br>
+			<p class="head" id="ab">ABOUT US</p>
+			<br>
+			<h5 class="head3">Our Goal</h5>
+			<br>
+			<p class="paragraph1">We aim to help every single people who are looking for jobs that are best for them, and we also help candidates find job positions that are best suitable and most compatible to them. It is our duty to assist each and every candidates land their expected jobs as quickly and easily as possible. We highly value and cherish the demands and satisfaction of all our clients. We always warmly welcome you with open arms.</p>
+			<br>
+			<h5 class="head4">Our Team</h5>
+			<br>
+			<img src="profilepicture.jpg" class="p1">
+			<img src="BLK.jpg" class="p2">
+			<img src="PTN.jpg" class="p3">
+			<div class="names" style="display: flex; justify-content: space-between;">
+				<p class="n1">Eaint Hmue Khin</p>
+				<p class="n2">Bhone Lwin Khant</p>
+				<p class="n3">Phyoe Thet Naing</p>
+			</div>
+			<br>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div id="footer">
+			<br>
+			<h1 style="text-align: center; font-family: 'Oswald', sans-serif; font-size: 70px; color: white; font-weight: normal;" id="sv">Our services</h1>
+			<br>
+			<br>
+			<br>
+			<img src="os.png" style="width: 150px; height: 150px; margin-left: 300px;">
+			<img src="clock.png" style="width: 150px; height: 150px; margin-left: 425px;">
+			<img src="trusted.jpg" style="width: 150px; height: 150px; margin-left: 425px;">
+			<br>
+			<div class="services" style="display: flex; justify-content: space-between;">
+				<p class="s1">Online Application</p>
+				<p class="s2">Fast Response</p>
+				<p class="s3">100% Trusted</p>
+			</div>
+			<br>
+			<div class="paragraphs" style="display: flex; justify-content: space-between;">
+				<p class="pr1">All applications can be done online without any concerns, and if requested, in case of some difficulties, or if the position is appropriate, interviews can also be held online.</p>
+				<p class="pr2">All forms and applications are guaranteed to be replied within 48 hours(maximum) of submitting them. In case of a technical error, or some other reason for a late response, the applicant will be informed immediately.</p>
+				<p class="pr3">Our site is totally trusted, certified, approved and risk-free from any kind of scam, fraud, or cyber threat. We put safety and ease of access for all clients as number one priority.</p>
+			</div>
+			<br>
+			<br>
+			<hr style="border: 1px solid lightgrey; margin: auto;" width="97%">
+			<br>
+			<br>
+			<p class="diss1">This site is solely for job applications only. Some of our functions and features are still in development, so there might be a few flaws here and there. While using JobApplication, you agree to have read and accepted our terms of use, cookie and privacy policy.
+			</p>
+			<br>	
+			<p class="diss1"><a href="#c" class="diss">© Copyright 2022 by JobApplication. Inc.</a> All rights reserved.</p>
+			<br>
+			<br>
+		</div>
+	</body>
+
+</html>
